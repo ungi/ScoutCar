@@ -1,8 +1,6 @@
-import serial
-
-arduinoSerialData = serial.Serial('/dev/ttyACM0', 9600)
-while True:
-  if (arduinoSerialData.inWaiting() & gt;0):
-    myData = arduinoSerialData.readLine()
-    print myData
-
+import serial 
+arduinoSerialData = serial.Serial('/dev/ttyACM0',9600)
+while 1:
+   if(arduinoSerialData.inWaiting()&gt;0):
+      myData = arduinoSerialData.readline()
+      print myData
